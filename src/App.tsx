@@ -212,10 +212,6 @@ function App() {
             <p className="eyebrow">Selected work</p>
             <h2 id="work-heading">Projects with product shape and engineering proof.</h2>
           </div>
-          <p>
-            A recruiter should be able to see the product problem, the technical contribution, and
-            the evidence quickly. These are the projects I would lead with right now.
-          </p>
         </div>
 
         <div className="bento-grid">
