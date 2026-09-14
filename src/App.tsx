@@ -181,7 +181,7 @@ function App() {
           </div>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="primary-action focus-ring" href="#work">
-              View selected work
+              View work
             </a>
             <a className="secondary-action focus-ring" href={resumeHref}>
               Resume
@@ -209,7 +209,7 @@ function App() {
       <section className="interest-section" id="work" aria-labelledby="work-heading">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">Selected work</p>
+            <p className="eyebrow">Work</p>
             <h2 id="work-heading">Projects with product shape and engineering proof.</h2>
           </div>
         </div>
