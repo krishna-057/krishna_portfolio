@@ -250,8 +250,7 @@ function App() {
             <h2 id="capability-heading">Strongest where AI meets usable software.</h2>
           </div>
           <p>
-            The portfolio should feel bold, but the claims should stay grounded: build, measure,
-            document, and ship.
+        
           </p>
         </div>
         <div className="capability-grid">
