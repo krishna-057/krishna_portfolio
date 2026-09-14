@@ -4,7 +4,7 @@
 
 ## Visual World
 
-The portfolio uses an AI lab notebook and model-evaluation console as its durable world: pale lab-film surfaces, black ink, copper warnings, teal signal traces, and restrained violet depth. It avoids the common dark-neon AI dashboard and the cream editorial portfolio default.
+Krishna's portfolio uses an AI lab notebook and model-evaluation console as its durable world: pale lab-film surfaces, black ink, copper warnings, teal signal traces, and restrained violet depth. It avoids the common dark-neon AI dashboard and the cream editorial portfolio default.
 
 ## Composition
 

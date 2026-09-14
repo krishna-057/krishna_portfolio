@@ -8,7 +8,7 @@ web
 
 ## Users
 
-Inferred from the brief: recruiters, hiring managers, founders, and engineering leads evaluating Aniket for AI/ML and software engineering roles.
+Recruiters, hiring managers, founders, and engineering leads evaluating Krishna Sharma for full-stack and AI/ML software engineering roles.
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ Inferred from the brief: the portfolio presents AI/ML work as inspectable engine
 
 ## Operating Context
 
-Visitors scan the homepage first, then inspect selected projects, links, resume, GitHub, and LinkedIn before deciding whether to contact Aniket.
+Visitors scan the homepage first, then inspect selected projects, links, resume, GitHub, and LinkedIn before deciding whether to contact Krishna.
 
 ## Capabilities and Constraints
 
@@ -32,7 +32,7 @@ Professional and memorable for AI/ML and software engineering roles. Avoid gener
 
 ## Evidence on Hand
 
-The project currently has placeholder links and illustrative project content. Future factual claims, resume, GitHub, LinkedIn, and project metrics must be replaced with real material.
+The portfolio now uses Krishna's resume, GitHub projects, contact details, LinkedIn profile, and published Bazaar Gridlock Play Store listing. PersonaBridge deployed link and future resume refinements can be added when available.
 
 ## Product Principles
 
