@@ -162,7 +162,7 @@ function App() {
           </div>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="primary-action focus-ring" href="#work">
-              View selected work
+              View work
             </a>
             <a className="secondary-action focus-ring" href={resumeHref}>
               Resume
@@ -190,7 +190,7 @@ function App() {
       <section className="interest-section" id="work" aria-labelledby="work-heading">
         <div className="section-intro">
           <div>
-            <p className="eyebrow">Selected work</p>
+            <p className="eyebrow">Work</p>
             <h2 id="work-heading">Projects with product shape and engineering proof.</h2>
           </div>
         </div>
@@ -230,10 +230,6 @@ function App() {
             <p className="eyebrow">Capability</p>
             <h2 id="capability-heading">Strongest where AI meets usable software.</h2>
           </div>
-          <p>
-            The portfolio should feel bold, but the claims should stay grounded: build, measure,
-            document, and ship.
-          </p>
         </div>
         <div className="capability-grid">
           <article className="capability-card">
