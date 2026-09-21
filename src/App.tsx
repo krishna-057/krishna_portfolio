@@ -95,7 +95,7 @@ const skills = [
 function App() {
   const root = useRef<HTMLElement | null>(null);
   const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
-  const coswaraResumeHref = `${import.meta.env.BASE_URL}resume-coswara.pdf`;
+  // const coswaraResumeHref = `${import.meta.env.BASE_URL}resume-coswara.pdf`;
 
   useGSAP(
     () => {
@@ -181,9 +181,9 @@ function App() {
             <a className="secondary-action focus-ring" href={resumeHref}>
               Resume
             </a>
-            <a className="secondary-action focus-ring" href={coswaraResumeHref}>
+            {/* <a className="secondary-action focus-ring" href={coswaraResumeHref}>
               AI/ML resume
-            </a>
+            </a> */}
             <a className="secondary-action focus-ring" href="mailto:krishnasharmacit@gmail.com">
               Email me
             </a>

@@ -27,6 +27,7 @@ BULLET = ParagraphStyle("bullet", parent=TEXT, leftIndent=11, firstLineIndent=-1
 TITLE = ParagraphStyle("title", fontName="Arial-Bold", fontSize=11, leading=14)
 HEADER = ParagraphStyle("header", fontName="Arial-Bold", fontSize=20, leading=23, alignment=TA_CENTER)
 SUBHEADER = ParagraphStyle("subheader", parent=TEXT, alignment=TA_CENTER, fontSize=10)
+LINK_COLOR = "#1454b8"
 
 c = canvas.Canvas(str(OUTPUT), pagesize=A4, pageCompression=1)
 c.setTitle("Krishna Sharma - AI/ML Resume (Coswara)")
@@ -73,15 +74,19 @@ def bullet(content):
     paragraph("&#8226;  " + content, BULLET)
 
 
+def link(label, href):
+    return f'<link href="{href}" color="{LINK_COLOR}"><u>{label}</u></link>'
+
+
 paragraph("KRISHNA SHARMA", HEADER)
 paragraph("AI ML Engineer | Software Engineer", SUBHEADER)
 gap(3)
 paragraph(
     'Bengaluru, Karnataka, India | '
-    '<link href="mailto:krishnasharmacit@gmail.com">krishnasharmacit@gmail.com</link> | '
-    '+91 6001176023 | '
-    '<link href="https://www.linkedin.com/in/krishna-sharma-a502aa234">LinkedIn</link> | '
-    '<link href="https://github.com/krishna-057">GitHub</link>',
+    + link("krishnasharmacit@gmail.com", "mailto:krishnasharmacit@gmail.com") + ' | '
+    + '+91 6001176023 | '
+    + link("LinkedIn", "https://www.linkedin.com/in/krishna-sharma-a502aa234") + ' | '
+    + link("GitHub", "https://github.com/krishna-057"),
     SUBHEADER,
 )
 
@@ -113,17 +118,19 @@ bullet("Designed the end-to-end browsing and booking journey across customer-fac
 section("PROJECTS")
 paragraph(
     '<b>Coswara Respiratory Symptom Classifier</b> | Python | PyTorch | Audio ML | '
-    '<link href="https://github.com/krishna-057/coswara-respiratory-symptom-classifier">GitHub</link>'
+    + link("GitHub", "https://github.com/krishna-057/coswara-respiratory-symptom-classifier")
 )
-bullet("Built a four-label CNN pipeline on 5,067 Coswara examples using mel spectrograms, mixup, class-imbalance-aware loss, and five-fold cross-validation.")
-bullet("Evaluated fever, cold, fatigue, and cough; mean best-validation macro F1 was 0.3900 +/- 0.0135 (best fold 0.4097). Results are experimental, not diagnostic.")
+bullet("Built a four-label CNN pipeline using mel spectrograms from 5,067 Coswara audio examples to predict fever, cold, fatigue, and cough.")
+bullet("Addressed class imbalance with weighted focal loss and used mixup augmentation; trained and evaluated with five-fold cross-validation.")
+bullet("Achieved <b>0.3900 &#177; 0.0135 mean best-validation macro-F1</b> (best fold: 0.4097). Reviewed per-symptom scores and error patterns; results are experimental, not diagnostic.")
 gap(6)
 paragraph(
-    '<b>Pneumonia Detection Benchmark</b> | Python | PyTorch | CNNs | Transformers | Grad-CAM | Kaggle | '
-    '<link href="https://github.com/krishna-057/pneumonia-detection-benchmark">GitHub</link>'
+    '<b>Pneumonia Detection Benchmark</b> | Python | PyTorch | CNNs | Transformers | Grad-CAM | '
+    + link("GitHub", "https://github.com/krishna-057/pneumonia-detection-benchmark")
 )
-bullet("Audited pediatric chest X-rays for corruption and exact duplicates, rebuilt balanced validation/test splits, and compared five CNN and transformer architectures under one two-phase fine-tuning protocol.")
-bullet("ConvNeXt-Tiny reached 0.9997 ROC-AUC and 0.990 recall; DenseNet121 reached 0.9899 F1 and 0.995 specificity at validation-selected thresholds, with Grad-CAM used for attention checks.")
+bullet("Audited pediatric chest X-rays for corrupt files and exact duplicates, then created balanced validation and test splits.")
+bullet("Compared five CNN and transformer architectures using a consistent two-phase fine-tuning protocol and validation-selected decision thresholds.")
+bullet("ConvNeXt-Tiny achieved <b>0.9997 ROC-AUC and 0.990 recall</b>; DenseNet121 achieved <b>0.9899 F1 and 0.995 specificity</b> on the internal test split. Used Grad-CAM to inspect model attention; results are not clinically validated.")
 
 section("EDUCATION")
 heading("Central Institute of Technology Kokrajhar", "Aug 2021 - Jun 2025")
