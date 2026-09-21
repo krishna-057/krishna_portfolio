@@ -19,18 +19,6 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "PersonaBridge",
-    type: "AI application",
-    summary:
-      "A consent-aware AI assistant prototype with chat sessions, reviewable memory, approval-gated actions, and a provider-neutral realtime contract.",
-    proof:
-      "Kept memory disabled by default, separated browser microphone permission from server credentials, and documented API boundaries for safer AI workflows.",
-    stack: ["Next.js", "React", "FastAPI", "TypeScript"],
-    links: [{ label: "GitHub", href: "https://github.com/krishna-057/PersonaBridge" }],
-    image: "https://picsum.photos/seed/personabridge-ai-console/1200/900",
-    className: "bento-large",
-  },
-  {
     name: "Clinic Appointment App",
     type: "Full-stack product",
     summary:
@@ -38,20 +26,11 @@ const projects: Project[] = [
     proof:
       "Implemented 30-minute scheduling rules, validation states, searchable appointment views, database persistence, RLS policies, and an installable Android APK.",
     stack: ["Flutter", "Dart", "Supabase", "PostgreSQL"],
-    links: [{ label: "GitHub", href: "https://github.com/krishna-057/clinic-appointment-app" }],
+    links: [
+      { label: "GitHub", href: "https://github.com/krishna-057/clinic-appointment-app" },
+      { label: "APK", href: "https://github.com/krishna-057/clinic-appointment-app/releases/tag/v1.0.0" },
+    ],
     image: "https://picsum.photos/seed/clinic-workflow/1200/900",
-    className: "bento-large",
-  },
-  {
-    name: "HookRelay",
-    type: "Developer platform",
-    summary:
-      "A webhook delivery platform for signed event ingestion, retry handling, delivery logs, CSV export, alerts, and replay workflows.",
-    proof:
-      "Designed PostgreSQL boundaries, BullMQ delivery jobs, HMAC verification examples, rate limiting, and receiver-failure classification.",
-    stack: ["Next.js", "Fastify", "PostgreSQL", "Redis"],
-    links: [{ label: "GitHub", href: "https://github.com/krishna-057/HookRelay" }],
-    image: "https://picsum.photos/seed/hookrelay-events/1000/900",
     className: "bento-small",
   },
   {
@@ -93,6 +72,8 @@ const skills = [
   "PostgreSQL",
   "Supabase",
   "Docker",
+  "Prometheus",
+  "Grafana",
   "RAG",
   "Computer Vision",
   "Grad-CAM",
@@ -265,7 +246,7 @@ function App() {
           </article>
           <article className="capability-card">
             <h3>Production habits</h3>
-            <p>Documented architecture, testable rules, monitoring with Prometheus, clean API contracts, validation states, and failure-aware workflows.</p>
+            <p>Documented architecture, testable rules, monitoring and dashboards with Prometheus and Grafana, clean API contracts, validation states, and failure-aware workflows.</p>
           </article>
         </div>
         <div className="skill-cloud" aria-label="Skills">
