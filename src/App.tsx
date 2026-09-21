@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import heroAsset from "./assets/hero.png";
+import coswaraAsset from "./assets/coswara-training-analysis.png";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -31,7 +32,7 @@ const projects: Project[] = [
       { label: "APK", href: "https://github.com/krishna-057/clinic-appointment-app/releases/tag/v1.0.0" },
     ],
     image: "https://picsum.photos/seed/clinic-workflow/1200/900",
-    className: "bento-small",
+    className: "bento-large",
   },
   {
     name: "Bazaar Gridlock",
@@ -46,7 +47,19 @@ const projects: Project[] = [
       { label: "GitHub", href: "https://github.com/krishna-057/bazaar-gridlock" },
     ],
     image: "https://picsum.photos/seed/bazaar-gridlock-game/1000/900",
-    className: "bento-small",
+    className: "bento-large",
+  },
+  {
+    name: "Coswara Respiratory Symptom Classifier",
+    type: "Audio ML experiment",
+    summary:
+      "A PyTorch notebook exploring four respiratory symptom labels from Coswara audio features and mel spectrograms.",
+    proof:
+      "Trained on 5,067 examples with five-fold validation; mean best-validation macro F1 was 0.3900 +/- 0.0135. Experimental results, not a diagnostic tool.",
+    stack: ["Python", "PyTorch", "Audio ML", "Cross-validation"],
+    links: [{ label: "GitHub", href: "https://github.com/krishna-057/coswara-respiratory-symptom-classifier" }],
+    image: coswaraAsset,
+    className: "bento-large",
   },
   {
     name: "Pneumonia Detection Benchmark",
@@ -58,7 +71,7 @@ const projects: Project[] = [
     stack: ["Python", "PyTorch", "CNNs", "Grad-CAM"],
     links: [{ label: "GitHub", href: "https://github.com/krishna-057/pneumonia-detection-benchmark" }],
     image: "https://picsum.photos/seed/pneumonia-benchmark/1000/900",
-    className: "bento-small",
+    className: "bento-large",
   },
 ];
 
@@ -82,6 +95,7 @@ const skills = [
 function App() {
   const root = useRef<HTMLElement | null>(null);
   const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
+  const coswaraResumeHref = `${import.meta.env.BASE_URL}resume-coswara.pdf`;
 
   useGSAP(
     () => {
@@ -166,6 +180,9 @@ function App() {
             </a>
             <a className="secondary-action focus-ring" href={resumeHref}>
               Resume
+            </a>
+            <a className="secondary-action focus-ring" href={coswaraResumeHref}>
+              AI/ML resume
             </a>
             <a className="secondary-action focus-ring" href="mailto:krishnasharmacit@gmail.com">
               Email me
